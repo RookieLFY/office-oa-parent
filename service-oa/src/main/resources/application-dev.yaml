@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 查看日志
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 1代表逻辑删除掉了 即查询时会在where后接 is_delete=0;如果不为0则查询不到即删除
+      logic-not-delete-value: 0 # 1代表逻辑删除掉了 即查询时会在where后接 is_delete=0
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/office-oa?serverTimezone=GMT%2B8&useSSL=false&characterEncoding=utf-8
+    username: root
+    password: lfy199981
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
