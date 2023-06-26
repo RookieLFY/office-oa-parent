@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d01bcb6-620b-4a46-a4b7-37e4523367ee" name="Changes" comment="" />
+    <list default="true" id="4d01bcb6-620b-4a46-a4b7-37e4523367ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/service-oa/src/test/java/con/lfy/code/CodeGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysRoleController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,35 +38,50 @@
     </option>
   </component>
   <component name="ProjectId" id="2Qrh1Ir5m2c6SL11w7W5vYCuigf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lufangyi/Documents/JAVA/DesignMode/office-oa-parent/service-oa/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6422501e4bc738860d04b1e63d7df89e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/lufangyi/Documents/JAVA/office-oa-parent/service-oa/src/test/java/con/lfy/code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "6422501e4bc738860d04b1e63d7df89e",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service-oa/src/test/java/con/lfy/code" />
       <recent name="$PROJECT_DIR$/service-oa/src/main/resources" />
       <recent name="$PROJECT_DIR$/model/src/main/java/com/lfy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServiceAuthApplication">
+  <component name="RunManager" selected="Application.CodeGet">
+    <configuration name="CodeGet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="con.lfy.code.CodeGet" />
+      <module name="service-oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="con.lfy.code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceAuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lfy.auth.ServiceAuthApplication" />
       <module name="service-oa" />
@@ -68,22 +91,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMpDemo1.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-oa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="con.lfy.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="con.lfy.auth" />
-      <option name="MAIN_CLASS_NAME" value="con.lfy.auth.TestMpDemo1" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGet" />
         <item itemvalue="Application.ServiceAuthApplication" />
         <item itemvalue="JUnit.TestMpDemo2.getAll" />
         <item itemvalue="JUnit.TestMpDemo1.testQueryWrapper" />
         <item itemvalue="JUnit.TestMpDemo1.update" />
-        <item itemvalue="JUnit.TestMpDemo1.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +177,11 @@
       <workItem from="1686204109512" duration="5278000" />
       <workItem from="1686209825630" duration="7866000" />
       <workItem from="1686316599922" duration="177000" />
+      <workItem from="1687145139045" duration="3224000" />
+      <workItem from="1687164786309" duration="556000" />
+      <workItem from="1687225410314" duration="1040000" />
+      <workItem from="1687227511406" duration="8909000" />
+      <workItem from="1687760918564" duration="1433000" />
     </task>
     <servers />
   </component>

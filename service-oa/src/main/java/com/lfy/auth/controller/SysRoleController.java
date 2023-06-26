@@ -41,11 +41,6 @@ public class SysRoleController {
         //当前直接调用service层的list方法，查询所有记录，然后返回list集合；
         List<SysRole> list = sysRoleService.list();
         //然后直接返回list，最后它会转换成json格式传送给前端
-        try{
-            int a = 10/0;
-        }catch (Exception e){
-            throw new SelfDefinedException(ResultCodeEnum.DATA_ERROR);
-        }
         return Result.ok(list);
     }
 
@@ -138,7 +133,5 @@ public class SysRoleController {
         }else {
             return Result.fail();
         }
-
     }
-
 }
