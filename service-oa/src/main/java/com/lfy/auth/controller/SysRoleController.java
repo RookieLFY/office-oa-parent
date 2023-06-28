@@ -4,10 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.lfy.auth.service.SysRoleService;
+import com.lfy.auth.service.SysUserRoleService;
 import com.lfy.common.result.Result;
 import com.lfy.common.result.ResultCodeEnum;
 import com.lfy.exception.SelfDefinedException;
 import com.lfy.model.system.SysRole;
+import com.lfy.vo.system.AssginRoleVo;
 import com.lfy.vo.system.SysRoleQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.util.StringUtils;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/admin/system/sysRole")
@@ -24,6 +27,7 @@ public class SysRoleController {
     * */
     @Resource
     private SysRoleService sysRoleService;
+
 
 //    @GetMapping("/getAll")
 //    public List<SysRole> getAll(){
@@ -133,5 +137,19 @@ public class SysRoleController {
         }else {
             return Result.fail();
         }
+    }
+
+    //查询所有角色 和 当前用户所属角色
+    @GetMapping("/toAssign/{id}")
+    public Result toAssignByUserId(@PathVariable Long userId){
+     Map<String,Object> map = sysRoleService.findRoleDataByUserId(userId);
+     return Result.ok(map);
+    }
+
+    //为用户分配角色
+    @PostMapping("/doAssign")
+    public Result doAssignByUserId(@RequestBody AssginRoleVo assginRoleVo){
+        sysRoleService.assignRoleDataByUserId(assginRoleVo);
+        return Result.ok();
     }
 }
