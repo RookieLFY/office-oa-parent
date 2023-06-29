@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4d01bcb6-620b-4a46-a4b7-37e4523367ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysRoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/SysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/SysUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/impl/SysRoleServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/impl/SysRoleServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/lfy/auth/service/impl/SysUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/test/java/con/lfy/code/CodeGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/test/java/con/lfy/code/CodeGet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +56,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -185,6 +186,9 @@
       <workItem from="1687227511406" duration="8909000" />
       <workItem from="1687760918564" duration="1433000" />
       <workItem from="1687776282046" duration="16211000" />
+      <workItem from="1687915680699" duration="4147000" />
+      <workItem from="1687935704630" duration="2848000" />
+      <workItem from="1688001671589" duration="3208000" />
     </task>
     <servers />
   </component>

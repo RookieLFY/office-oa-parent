@@ -9,6 +9,7 @@ import com.lfy.model.system.SysRole;
 import com.lfy.model.system.SysUserRole;
 import com.lfy.vo.system.AssginRoleVo;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.*;
@@ -44,7 +45,6 @@ public class SysRoleServiceImp extends ServiceImpl<SysRoleMapper, SysRole> imple
                 assignRoleList.add(sysRole);
             }
         }
-
         //创建map集合，用以封装刚刚得到的已分配角色数据和所有角色数据
         Map<String,Object> roleMap = new HashMap<>();
         //将已分配的角色列表压入map集合中
@@ -55,8 +55,29 @@ public class SysRoleServiceImp extends ServiceImpl<SysRoleMapper, SysRole> imple
         return roleMap;
     }
 
+
+    //为用户分配角色
     @Override
     public void assignRoleDataByUserId(AssginRoleVo assginRoleVo) {
+        //把用户之前分配的角色数据删除，用户角色关系表中，根据userid删除
+        //使用LambdaQueryWrapper封装条件
+        LambdaQueryWrapper<SysUserRole> wrapper = new LambdaQueryWrapper<>();
+        //在SysUserRole类中取得用户id，与assginRoleVo中取得的用户id列表做对比
+        wrapper.eq(SysUserRole::getUserId,assginRoleVo.getUserId());
+        //将附和条件的角色id删除掉
+        sysUserRoleService.remove(wrapper);
+
+        //重新进行角色分配
+        List<Long> roleIdList = assginRoleVo.getRoleIdList();
+        for (Long roleId:roleIdList){
+            if(StringUtils.isEmpty(roleId)){
+                continue;
+            }
+            SysUserRole sysUserRole = new SysUserRole();
+            sysUserRole.setUserId(assginRoleVo.getUserId());
+            sysUserRole.setRoleId(roleId);
+            sysUserRoleService.save(sysUserRole);
+        }
 
     }
 //    @Resource

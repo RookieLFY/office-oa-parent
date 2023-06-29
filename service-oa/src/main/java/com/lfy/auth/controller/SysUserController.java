@@ -111,5 +111,12 @@ public class SysUserController {
             return Result.fail();
         }
     }
+
+    //修改用户状态值
+    @GetMapping("/updateStatus/{id}/{status}")
+    public Result updateStatus(@PathVariable Long id,@PathVariable Integer status){
+        sysUserService.updateStatus(id,status);
+        return Result.ok();
+    }
 }
 
